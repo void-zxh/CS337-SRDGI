@@ -6,7 +6,7 @@ This is the SRDGI project code for the cs337 course. This project proposes a met
 
 # Dataset
 
-##Download Datasets
+## Download Datasets
 
 The training images dataset we used can be downloaded from (https://jbox.sjtu.edu.cn/l/t1cKmu).
 
@@ -44,7 +44,7 @@ python train.py --dataset PATH_TO_DATASETDIR --n_epoch 50 --resume_G PATH_TO_RES
 - `--resume_G`: path to generator checkpoints to resume.
 - `--resume_D`: path to discriminator checkpoint to resume.
 
-test model
+test model (show the MSE and SSIM)
 
 ```
 python test_compare.py --dataset PATH_TO_DATASETDIR --model PATH_TO_MODEL
@@ -52,6 +52,17 @@ python test_compare.py --dataset PATH_TO_DATASETDIR --model PATH_TO_MODEL
 
 - `--dataset`: path to dataset.
 - `--model`: path to model.
+
+test model I(show the result image)
+
+```
+python test.py --dataset PATH_TO_DATASETDIR --model PATH_TO_MODEL
+```
+
+- `--dataset`: path to dataset.
+- `--model`: path to model.
+
+The output of the images will be shown in the directory `result/{your scene's name}`
 
 ## Dynamic Channels
 

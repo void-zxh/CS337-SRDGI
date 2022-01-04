@@ -34,10 +34,13 @@ python test_compare.py --dataset PATH_TO_DATASETDIR --model PATH_TO_MODEL
 
 ### Dynamic Channels
 
-Before you train or test the dynamic channels model, you should prepare the dataset first and 
-'''
-cd Dynamic Channels/
-'''
+Before you train or test the dynamic channels model, you should prepare the dataset file directory first and be located in the directory `Dynamic-channels` 
+
+```
+
+cd Dynamic-channels/
+
+```
 
 Train model
 

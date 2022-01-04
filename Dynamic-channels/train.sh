@@ -1,0 +1,1 @@
+python train.py --dataset cornellbox --n_epoch 50 --dynamic_channels 1

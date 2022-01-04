@@ -1,0 +1,1 @@
+python test.py --model checkpoint/dynamic/netG_model_epoch_49.pth --dataset cornellbox --accuracy 1

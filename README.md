@@ -100,6 +100,7 @@ python test.py --model PATH_TO_MODEL --dataset PATH_TO_DATASETDIR --accuracy 1
 
 - SRGAN : https://github.com/leftthomas/SRGAN
 - Deep illumination: https://github.com/CreativeCodingLab/DeepIllumination
+- anycost-gan: https://github.com/mit-han-lab/anycost-gan
 
 # Group
 

@@ -36,14 +36,18 @@ What you need to is follow 3 simple steps:
 Train model
 
 ```
-python train.py --dataset PATH_TO_DATASETDIR --n_epoch 50 --resume_G PATH_TO_RESUME_GENERATER --resume_D PATH_TO_RESUME_DISCRIMINATOR
+python train.py --dataset PATH_TO_DATASETDIR --n_epoch 50 \
+                --resume_G PATH_TO_RESUME_GENERATER --resume_D PATH_TO_RESUME_DISCRIMINATOR \
+                --lamda 100 --lamda_F 1
 ```
 
 - `--dataset`: path to dataset.
 - `--n_epoch`: number of training epochs.
 - `--resume_G`: path to generator checkpoints to resume.
 - `--resume_D`: path to discriminator checkpoint to resume.
-
+- `--lamda` : the parameter lambda in the loss function
+- `--lamda_F` : the parameter lambda_F in the loss function
+- 
 test model (show the MSE and SSIM)
 
 ```

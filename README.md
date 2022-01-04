@@ -6,11 +6,32 @@ This is the SRDGI project code for the cs337 course. This project proposes a met
 
 # Dataset
 
-we used Training images dataset (download)(https://jbox.sjtu.edu.cn/l/t1cKmu).
+##Download Datasets
 
-## Usage
+The training images dataset we used can be downloaded from (https://jbox.sjtu.edu.cn/l/t1cKmu).
 
-### SRDGI
+You will download two directory
+
+- dataset : the datset which have been divided into train, validate and test dataset in different scenes
+- output : the raw data we get by some rendering engine (Unity VXGI, C4D Octane) 
+
+## Create your own dataset
+
+We also provide a simple way to create your own dataset from the raw data in the output directory.
+
+What you need to is follow 3 simple steps:
+
+1. Build the local directory `output` and build a subdirectory named of yout own scene
+2. Put your own G-buffer images (aledo,direct,depth,normal) and ground truth images into this subdirectory.
+3. Choose one proper sricpt file in the directory `dataset_generator` to divide your images and verify the script of your own scene's name  
+    Then execute the whole script below:(we use dataset_move_oc.py as a example)
+   ```
+   python dataset_move_oc.py
+   ```
+
+# Usage
+
+## SRDGI
 
 Train model
 
@@ -32,14 +53,12 @@ python test_compare.py --dataset PATH_TO_DATASETDIR --model PATH_TO_MODEL
 - `--dataset`: path to dataset.
 - `--model`: path to model.
 
-### Dynamic Channels
+## Dynamic Channels
 
 Before you train or test the dynamic channels model, you should prepare the dataset file directory first and be located in the directory `Dynamic-channels` 
 
 ```
-
 cd Dynamic-channels/
-
 ```
 
 Train model

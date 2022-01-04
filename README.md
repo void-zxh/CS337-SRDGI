@@ -95,3 +95,14 @@ python test.py --model PATH_TO_MODEL --dataset PATH_TO_DATASETDIR --accuracy 1
 - `--model`: path to model.
 - `--dataset`: path to dataset.
 - `--accuracy`: an integer between 1 and 4, the larger the rendering accuracy the higher.
+
+# Acknowledge
+
+- SRGAN : https://github.com/leftthomas/SRGAN
+- Deep illumination: https://github.com/CreativeCodingLab/DeepIllumination
+
+# Group
+
+- Xinhao Zheng : void_zxh@sjtu.edu.cn
+- Yutian Liu : stau7001@sjtu.edu.cn
+

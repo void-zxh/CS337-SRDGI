@@ -103,6 +103,9 @@ python test.py --model PATH_TO_MODEL --dataset PATH_TO_DATASETDIR --accuracy 1
 
 # Group
 
+Members:
 - Xinhao Zheng : void_zxh@sjtu.edu.cn
 - Yutian Liu : stau7001@sjtu.edu.cn
+
+Mentor: Ran Yi
 
